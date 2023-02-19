@@ -16,3 +16,4 @@ for i in profiles:
         print ("{:<30}|  {:<}".format(i, "ENCODING ERROR"))
 
 input("")
+
