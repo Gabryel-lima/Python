@@ -1,7 +1,0 @@
-{
-    "python.testing.pytestArgs": [
-        "Python TDD"
-    ],
-    "python.testing.unittestEnabled": false,
-    "python.testing.pytestEnabled": true
-}
