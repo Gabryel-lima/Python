@@ -5,25 +5,25 @@ Como já sabemos, os commits possuem hashs que os identificam de uma forma únic
 Podemos visualizar todos os commits, um em cada linha com o comando:
 
 ```lua
-git log --onelineCOPIAR CÓDIGO
+git log --oneline
 ```
 
 Se, em vez de menos informações, quisermos ver mais como as alterações do commit, podemos usar:
 
 ```bash
-git log -pCOPIAR CÓDIGO
+git log -p
 ```
 
 Também podemos pesquisar as informações do autor daquele commit com o comando:
 
 ```bash
-git log --author="user_name"COPIAR CÓDIGO
+git log --author="user_name"
 ```
 
 E pesquisar informações por data:
 
 ```lua
-git log --since=1.month.ago --until=1.day.agoCOPIAR CÓDIGO
+git log --since=1.month.ago --until=1.day.ago
 ```
 
 No comando acima, estamos buscando as informações do commit desde um mês atrás até um dia atrás.
@@ -31,45 +31,7 @@ No comando acima, estamos buscando as informações do commit desde um mês atr�
 Você também pode formatar a visualização das informações de commit com o comando:
 
 ```perl
-git log --pretty="format:%h %s"COPIAR CÓDIGO
-```
-
-Este traz o hash seguido da mensagem de commit. Para saber mais formas de exibir as informações de commit, [aqui tem uma lista](https://devhints.io/git-log-format) de maneiras que você pode fazer isso.
-
-Se você deseja verificar o histórico de alterações, as mensagens de commits, o nome do autor daquele commit e outras informações sobre o projeto, existe um comando do git que pode te ajudar. Este comando é o `git log`.
-
-Como já sabemos, os commits possuem hashs que os identificam de uma forma única, isto é, não existem dois commits com o mesmo hash. Com o git log podemos ver o hash e várias outras informações do commit.
-
-Podemos visualizar todos os commits, um em cada linha com o comando:
-
-```lua
-git log --onelineCOPIAR CÓDIGO
-```
-
-Se, em vez de menos informações, quisermos ver mais como as alterações do commit, podemos usar:
-
-```bash
-git log -pCOPIAR CÓDIGO
-```
-
-Também podemos pesquisar as informações do autor daquele commit com o comando:
-
-```bash
-git log --author="user_name"COPIAR CÓDIGO
-```
-
-E pesquisar informações por data:
-
-```lua
-git log --since=1.month.ago --until=1.day.agoCOPIAR CÓDIGO
-```
-
-No comando acima, estamos buscando as informações do commit desde um mês atrás até um dia atrás.
-
-Você também pode formatar a visualização das informações de commit com o comando:
-
-```perl
-git log --pretty="format:%h %s"COPIAR CÓDIGO
+git log --pretty="format:%h %s"
 ```
 
 Este traz o hash seguido da mensagem de commit. Para saber mais formas de exibir as informações de commit, [aqui tem uma lista](https://devhints.io/git-log-format) de maneiras que você pode fazer isso.
@@ -87,7 +49,7 @@ Por conveniência, a clonagem cria uma **conexão remota** apontando para o repo
 Com o `git clone` você também pode clonar o repositório para uma pasta específica:
 
 ```xml
-git clone <repositorio> <meu-projeto-clone>COPIAR CÓDIGO
+git clone <repositorio> <meu-projeto-clone>
 ```
 
 O repositório localizado em `repositorio` é clonado para uma pasta chamada `meu-projeto-clone`.
@@ -95,7 +57,7 @@ O repositório localizado em `repositorio` é clonado para uma pasta chamada `me
 Você também pode configurar o `git clone` e clonar o repositório a partir de uma **branch** específica, diferente da original dessa forma:
 
 ```bash
-git clone -branch new_feature <repositorio>COPIAR CÓDIGO
+git clone -branch new_feature <repositorio>
 ```
 
 O exemplo acima clonaria apenas a **branch** `new_feature` de `repositorio`. Outras configurações de opções do `git clone` você pode consultar [neste link](https://git-scm.com/docs/git-clone).
@@ -105,7 +67,7 @@ O exemplo acima clonaria apenas a **branch** `new_feature` de `repositorio`. Out
 * Caminho 1: criar uma branch para cada aula do curso com o comando:
 
 ```css
-git checkout -b nome-da-branchCOPIAR CÓDIGO
+git checkout -b nome-da-branch
 ```
 
 Com esse comando, você cria uma nova branch e muda automaticamente para ela para dar início ao desenvolvimento.
@@ -113,7 +75,7 @@ Com esse comando, você cria uma nova branch e muda automaticamente para ela par
 * Caminho 2: criar uma branch para cada aula do curso com o comando:
 
 ```undefined
-git branch nome-da-branchCOPIAR CÓDIGO
+git branch nome-da-branch
 ```
 
 Essa é outra forma de criar uma branch. Nesse caso, ela é criada, mas não há a mudança automática para esta nova ramificação. Para isso, você pode usar o comando `git switch nome-da-branch`.
@@ -170,7 +132,6 @@ git clone https://github.com/usuario/nome-do-repositorio.git
 Para enviar as alterações feitas em seu repositório para o servidor remoto, use o comando `git push`:
 
 git push origin sua-branch
-
 
 Antes de fazer o push pela primeira vez, você precisa adicionar o servidor remoto com o comando `git remote add`:
 
