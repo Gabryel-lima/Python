@@ -16,23 +16,19 @@ Carregamos e exploramos os dados com os seguintes comandos:
 
 ---
 
+# #salva o caminho do arquivo para facilitar o acesso
 
+#melbourne_file_path = '../input/melbourne-housing-snapshot/melb_data.csv'
 
-# salva o caminho do arquivo para facilitar o acesso
+# #lê os dados e armazena em um DataFrame chamado melbourne_data
 
-melbourne_file_path = '../input/melbourne-housing-snapshot/melb_data.csv'
+#melbourne_data = pd.read_csv(melbourne_file_path)
 
-# lê os dados e armazena em um DataFrame chamado melbourne_data
+# #imprime um resumo dos dados em Melbourne data
 
-melbourne_data = pd.read_csv(melbourne_file_path)
-
-# imprime um resumo dos dados em Melbourne data
-
-melbourne_data.describe()
+#melbourne_data.describe()
 
 ---
-
-
 
 Os resultados mostram 8 números para cada coluna em seu conjunto de dados original. O primeiro número, a contagem, mostra quantas linhas possuem valores não ausentes.
 
