@@ -57,11 +57,12 @@ melbourne_model.fit(x,y)
 DecisionTreeRegressor(random_state=1)
 
 print("Fazendo previsões para as 5 casas a seguir:")
-print(X.head())
+print(x.head())
 print("As previsões são:")
-print(melbourne_model.predict(X.head()))
+print(melbourne_model.predict(x.head()))
 
 ####################################################################
+from sklearn.tree import DecisionTreeRegressor
 
 # Definindo uma função chamada 'get_mae' que recebe como argumentos o número máximo de folhas da árvore de decisão,
 # os conjuntos de treinamento e validação (atributos e rótulos), e retorna o erro absoluto médio (mae).
@@ -81,7 +82,9 @@ mae = mean_absolute_error(val_y, preds_val)
 # Calculando o erro absoluto médio entre as predições do modelo e as rótulos verdadeiras do conjunto de validação
 # usando o método 'mean_absolute_error' da biblioteca 'sklearn.metrics' e atribuindo o resultado à variável 'mae'.
 
-return(mae)
+#return(mae)
+mae
+
 # Retornando o valor do erro absoluto médio calculado.
 
 
