@@ -18,8 +18,6 @@ Este repositório está organizado em pastas que representam os tópicos princip
 * **01-poo-python** : Nesta pasta, você encontrará recursos avançados relacionados à Programação Orientada a Objetos em Python. Isso inclui tutoriais sobre herança, polimorfismo, padrões de design e boas práticas de POO.
 * **02-machine-learning** : Esta pasta se concentra na aplicação de algoritmos de Machine Learning em Python, com ênfase na biblioteca scikit-learn. Você aprenderá como criar modelos de Machine Learning, ajustar hiperparâmetros e avaliar o desempenho do modelo.
 * **03-projetos** : Aqui você encontrará projetos práticos que permitem aplicar seus conhecimentos em Python, POO e Machine Learning em cenários do mundo real. Cada projeto terá uma pasta dedicada com instruções e recursos necessários.
-* **04-tutoriais-avancados** : Esta pasta contém tutoriais detalhados sobre tópicos avançados, como implementação de algoritmos de Machine Learning personalizados, otimização de código Python e visualização de dados avançada.
-* **05-recursos** : Uma coleção de recursos adicionais, como livros, cursos online e links úteis para aprofundar seus conhecimentos.
 
 ## Como Começar
 
